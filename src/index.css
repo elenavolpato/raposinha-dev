@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+/* @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+} */
+
+body {
+  background-color: #222;
+}
+
+/* glitch */
+.raposinha-img {
+  animation: glitch 0.8s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+div:before,
+div:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before {
+  animation: glitchTop 0.8s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+div:after {
+  animation: glitchBotom 1s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+:root {
+  --f-size: 15;
+  --f-unit: 1vmin;
+  --f: calc(var(--f-size) * var(--f-unit));
+  --bg: #181717;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--f);
+  background-color: var(--bg);
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header {
+  flex: 1;
+  line-height: 0.75;
+  margin: auto;
+  color: #ff00e1;
+  text-align: center;
+  transform: scaleX(var(--scale, 1));
+  animation: glitch-p 8s infinite alternate;
+  position: relative;
+}
+
+.header::before,
+.header::after {
+  --top: 0;
+  --left: 0;
+  --v-height: 30%;
+  --n-tenth: calc(var(--f-size) * 0.1 * var(--top));
+  --t-cut: calc(var(--n-tenth) / var(--f-size) * 100%);
+  --b-cut: calc(var(--t-cut) + var(--v-height));
+
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  transform: translateX(calc(var(--left) * 100%));
+  filter: drop-shadow(0 0 transparent);
+  text-shadow: calc(var(--left) * -3em) 0 0.02em #920281,
+    calc(var(--left) * -6em) 0 0.02em #1af0dc;
+  background-color: var(--bg);
+  clip-path: polygon(
+    0% var(--t-cut),
+    100% var(--t-cut),
+    100% var(--b-cut),
+    0% var(--b-cut)
+  );
+}
+
+.header::before {
+  animation: glitch-b 1.2s infinite alternate-reverse;
+}
+
+.header::after {
+  animation: glitch-a 2.5s infinite alternate;
+}
+
+@keyframes glitch-p {
+  17% {
+    --scale: 0.87;
+  }
+  31% {
+    --scale: 1.1;
+  }
+  37% {
+    --scale: 1.3;
+  }
+  47% {
+    --scale: 0.91;
+  }
+  87% {
+    --scale: 1;
+  }
+}
+
+@keyframes glitch-a {
+  0% {
+    --v-height: 15%;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    --top: 0;
+    --left: 0;
+  }
+  20% {
+    --left: 0.005;
+  }
+  40% {
+    --left: 0.01;
+    --v-height: 20%;
+    --top: 3;
+  }
+  60% {
+    --left: 0.03;
+    --v-height: 25%;
+    --top: 6;
+  }
+  80% {
+    --left: 0.07;
+    --v-height: 5%;
+    --top: 8;
+  }
+  100% {
+    --left: 0.083;
+    --v-height: 30%;
+    --top: 1;
+  }
+}
+
+@keyframes glitch-b {
+  0% {
+    --v-height: 15%;
+    --top: 10;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    --top: 0;
+    --left: 0;
+  }
+  20% {
+    --left: -0.005;
+  }
+  40% {
+    --left: -0.01;
+    --v-height: 17%;
+    --top: 3;
+  }
+  60% {
+    --left: -0.03;
+    --v-height: 35%;
+    --top: 6;
+  }
+  80% {
+    --left: -0.07;
+    --v-height: 5%;
+    --top: 8;
+  }
+  100% {
+    --left: -0.083;
+    --v-height: 30%;
+    --top: 1;
+  }
+}
