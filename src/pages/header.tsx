@@ -3,7 +3,7 @@ export default function Header() {
     <section>
       <div class="relative sm:rotate-0 rotate-90 my-15 flex justify-center h-screen w-screen">
         <img
-          src="/images/raposinha.svgnpm"
+          src="/images/raposinha.svg"
           alt="handwritten raposinha logo"
           class="absolute opacity-50 raposinha-img pt-100"
         />
