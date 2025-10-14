@@ -1,8 +1,7 @@
 export default function Header() {
-  /*  */
   return (
-    <section class="h-screen w-screen ">
-      <div class="relative my-15 flex  justify-center items-center max-h-full h-full ">
+    <section class="h-screen w-screen overflow-hidden ">
+      <div class="relative sm:mt-15 flex  justify-center items-center max-h-300 h-full ">
         <img
           src="/images/raposinha.svg"
           alt="handwritten raposinha logo"
