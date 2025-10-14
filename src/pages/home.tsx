@@ -5,8 +5,8 @@ export default function Home() {
   const [count, setCount] = createSignal(0);
 
   return (
-    <section>
+    <>
       <Header />
-    </section>
+    </>
   );
 }

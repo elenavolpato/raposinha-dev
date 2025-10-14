@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* @layer base {
+@layer base {
   *,
   ::after,
   ::before,
@@ -8,7 +8,7 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
-} */
+}
 
 body {
   background-color: #222; /* aa */
