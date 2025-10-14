@@ -1,8 +1,8 @@
 export default function Header() {
-  /* sm:rotate-0 rotate-90 */
+  /*  */
   return (
     <section class="h-screen w-screen">
-      <div class="relative my-15 flex justify-center items-center max-h-full h-full w-screen">
+      <div class="relative my-15 flex  justify-center items-center max-h-full h-full w-screen">
         <img
           src="/images/raposinha.svg"
           alt="handwritten raposinha logo"
@@ -18,7 +18,7 @@ export default function Header() {
       </div>
 
       <p
-        class="absolute bottom-20 text-gray-50 text-[35px] flex justify-center w-screen"
+        class="absolute bottom-20 text-gray-50 sm:text-2xl text-base flex justify-center w-screen"
         style={{ "font-family": "'Kode Mono', monospace" }}
       >
         coming soon
