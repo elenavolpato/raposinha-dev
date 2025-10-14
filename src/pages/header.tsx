@@ -1,15 +1,15 @@
 export default function Header() {
   /*  */
   return (
-    <section class="h-screen w-screen">
-      <div class="relative my-15 flex  justify-center items-center max-h-full h-full w-screen">
+    <section class="h-screen w-screen ">
+      <div class="relative my-15 flex  justify-center items-center max-h-full h-full ">
         <img
           src="/images/raposinha.svg"
           alt="handwritten raposinha logo"
-          class="absolute opacity-50 raposinha-img "
+          class="absolute opacity-50 raposinha-img overflow-hidden"
         />
         <h1
-          class="header absolute text-[#EA00FF] text-7x1 "
+          class="header absolute text-[#EA00FF] overflow-hidden"
           style={{ "font-family": "'Kode Mono', monospace" }}
           data-text="raposinha"
         >
