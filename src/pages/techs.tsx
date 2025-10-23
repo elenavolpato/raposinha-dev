@@ -15,6 +15,10 @@ export default function Techs() {
       url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     },
     {
+      name: "JavaScript",
+      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
       name: "React",
       url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
@@ -34,59 +38,55 @@ export default function Techs() {
       name: "Tailwind",
       url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     },
-    {
-      name: "MongoDB",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    },
   ];
 
   // Duplicate logos for seamless loop
   const duplicatedLogos = [...logos, ...logos];
+  const [index, setIndex] = createSignal(0);
+  onMount(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % logos.length);
+    }, 2000); // 1s animation + 1s stop
+    return () => clearInterval(interval);
+  });
 
   return (
-    <section class="flex items-center justify-center max-w-full">
+    <section class="flex items-center justify-center max-w-full ">
       <div class="w-full px-4">
-        <h1 class="md:text-6xl text-4xl text-gray-100 text-center pb-2">
+        <h1 class="md:text-6xl text-4xl text-gray-100 text-center pb-2 -mt-20">
           Elena Volpato
         </h1>
         <h1 class="md:text-4xl  text-2xl text-gray-100 text-center pb-5">
-          Language agnostic front end developer
+          Framework agnostic front-end developer
         </h1>
 
-        <div class="w-full bg-gray-200 py-10 px-4 md:px-20">
+        <div class="max-w-full w-screen bg-gray-200 py-10 px-4 md:px-20">
           <style>{`
-            @keyframes scroll {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(-50%);
-              }
-            }
-            .animate-scroll {
-              animation: scroll 30s linear infinite;
-            }
-            .animate-scroll:hover {
+          
+            .carousel-container:hover {
               animation-play-state: paused;
             }
             .logo-container {
               position: relative;
             }
             .logo-name {
-              position: absolute;
-              bottom: -30px;
+            position: absolute;
               left: 50%;
               transform: translateX(-50%);
               opacity: 0;
-              transition: opacity 0.3s ease;
+              transition: opacity .3s ease;
               white-space: nowrap;
-              font-size: 14px;
+              font-size: 17px;
               font-weight: 500;
-              color: #374151;
+              color: white;
+              background: #374151; 
+              padding-inline:1em;
+              
             }
             .logo-container:hover .logo-name,
             .logo-container:focus .logo-name {
               opacity: 1;
+              
             }
             
             /* Mobile styles */
@@ -112,16 +112,16 @@ export default function Techs() {
 
           {/* Desktop Carousel */}
           <div class="carousel-container overflow-hidden">
-            <div class="flex animate-scroll">
-              {duplicatedLogos.map((logo, index) => (
+            <div class="flex justify-center">
+              {logos.map((logo) => (
                 <div
-                  class="flex-shrink-0 px-12 flex items-center justify-center logo-container"
+                  class="flex-shrink-0 px-12 flex items-center justify-center logo-container h-20"
                   tabindex="0"
                 >
                   <img
                     src={logo.url}
                     alt={logo.name}
-                    class="h-16 w-16 object-contain"
+                    class="h-16 w-16 object-contain glitch-techs"
                   />
                   <span class="logo-name">{logo.name}</span>
                 </div>
