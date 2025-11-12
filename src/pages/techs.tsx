@@ -51,8 +51,8 @@ export default function Techs() {
   });
 
   return (
-    <section class="flex items-center justify-center max-w-full ">
-      <div class="w-full px-4">
+    <section class="flex items-center justify-center max-w-full o">
+      <div class="w-full ">
         <h1 class="md:text-6xl text-4xl text-gray-100 text-center pb-2 -mt-20">
           Elena Volpato
         </h1>
@@ -90,7 +90,7 @@ export default function Techs() {
             }
             
             /* Mobile styles */
-            @media (max-width: 768px) {
+            @media (max-width: 1019px) {
               .carousel-container {
                 display: none !important;
               }
@@ -100,7 +100,7 @@ export default function Techs() {
             }
             
             /* Desktop styles */
-            @media (min-width: 769px) {
+            @media (min-width: 1020px) {
               .carousel-container {
                 display: block !important;
               }

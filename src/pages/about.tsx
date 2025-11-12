@@ -12,12 +12,12 @@ export default function About() {
 
   return (
     <section>
-      <div class="flex max-w-[1200px] items-start my-8">
+      <div class="flex flex-col md:flex-row max-w-[1200px] items-start my-8 ">
         <img
           src="public/images/elena_2025.png"
-          class="max-w-[180px] mr-6 mt-2 mix-blend-difference elena-img"
+          class="max-w-[180px] mr-6 mt-2 mix-blend-difference elena-img self-center md:self-auto mb-8"
         />
-        <div class="max-w-50%">
+        <div class="max-w-50% mx-4">
           {/* <p class="text-base text-gray-50 text-xl">About Elena Volpato </p> */}
 
           <p class="text-base text-gray-50 pb-2">

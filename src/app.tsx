@@ -6,7 +6,7 @@ const App: Component<{ children: Element }> = (props) => {
 
   return (
     <>
-      <main>
+      <main class="overflow-x-hidden">
         <Suspense>{props.children}</Suspense>
       </main>
     </>
