@@ -1,5 +1,6 @@
-import { createEffect, Suspense } from 'solid-js'
+import { createEffect } from 'solid-js'
 import AboutData from '../assets/about.data'
+import elena from '../assets/public/images/elena_2025.png'
 
 export default function About() {
   const name = AboutData()
@@ -21,7 +22,7 @@ export default function About() {
             style={{ transform: 'translate(4px, 4px)' }}
           ></div>
           <img
-            src="public/images/elena_2025.png"
+            src={elena}
             class="max-w-[180px] pt-2 pl-2 mix-blend-difference elena-img self-center md:self-auto "
           />
         </div>
