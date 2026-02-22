@@ -1,7 +1,7 @@
 import { createSignal, onMount } from 'solid-js'
 
 export default function Techs() {
-  const logos = [
+  /*   const logos = [
     {
       name: 'Angular',
       url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
@@ -38,17 +38,17 @@ export default function Techs() {
       name: 'Tailwind',
       url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
     },
-  ]
+  ] */
 
   // Duplicate logos for seamless loop
-  const duplicatedLogos = [...logos, ...logos]
-  const [index, setIndex] = createSignal(0)
+  /*  const duplicatedLogos = [...logos, ...logos] */
+  /* const [index, setIndex] = createSignal(0)
   onMount(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % logos.length)
     }, 2000) // 1s animation + 1s stop
     return () => clearInterval(interval)
-  })
+  }) */
 
   return (
     <section class="flex items-center justify-center max-w-full ">

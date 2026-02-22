@@ -34,7 +34,7 @@ export default function Contact() {
           </a>
 
           {/* Email */}
-          <a
+          {/*  <a
             href="mailto:elena@raposinha.dev"
             aria-label="Email"
             class="text-gray-400 hover:text-[#EA00FF] transition-colors duration-300"
@@ -52,7 +52,7 @@ export default function Contact() {
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-          </a>
+          </a> */}
 
           {/* Website */}
           <a
@@ -77,10 +77,18 @@ export default function Contact() {
             </svg>
           </a>
         </div>
-
-        <p class=" text-xs text-gray-600">
-          © {new Date().getFullYear()} — raposinha.dev
-        </p>
+        <div class="text-center">
+          <a
+            href="mailto:elena@raposinha.dev"
+            aria-label="Email"
+            class="text-gray-400 mb-0 pb-0"
+          >
+            elena@raposinha.dev
+          </a>
+          <p class="text-xs text-gray-500 mt-0 pt-0">
+            © {new Date().getFullYear()} — raposinha.dev
+          </p>
+        </div>
       </div>
     </footer>
   )
