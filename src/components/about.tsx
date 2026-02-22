@@ -37,10 +37,10 @@ export default function About() {
 
           <p class="text-base text-gray-50 py-2">
             As if moving to another country wasn’t enough, I also changed my
-            career in 2020 from event and presentations project manager - so I’m
-            fluent in reading clients minds too - to front-end developer, which
-            basically means that now I make buttons that actually do stuff and
-            then secretly judge the shade of blue chosen by the client.
+            career in 2020 from event and presentations project manager to
+            front-end developer, which basically means that now I make buttons
+            that actually do stuff and then secretly judge the shade of blue
+            chosen by the client. :D
           </p>
 
           <p class="text-base text-gray-50 py-2">
@@ -58,9 +58,6 @@ export default function About() {
             that just work, and sometimes I even live spending hours debugging
             and making my hair turn gray.
           </p>
-          {/* <p class="text-base text-gray-50 py-2">
-           But what the hell is ‘raposinha’? My surname is italian, and it means ‘piccola volpe’, small fox, which is raposinha in Portughese.
-          </p> */}
         </div>
       </div>
     </section>

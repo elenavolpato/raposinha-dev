@@ -33,34 +33,13 @@ export default function Contact() {
             </svg>
           </a>
 
-          {/* Email */}
-          {/*  <a
-            href="mailto:elena@raposinha.dev"
-            aria-label="Email"
-            class="text-gray-400 hover:text-[#EA00FF] transition-colors duration-300"
-          >
-            <svg
-              class="w-12 h-12"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-          </a> */}
-
           {/* Website */}
           <a
             href="https://raposinha.dev"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Website"
-            class="text-gray-400 hover:text-[#87F9E6] transition-colors duration-300"
+            class="text-gray-400 hover:text-[#EA00FF]  transition-colors duration-300"
           >
             <svg
               class="w-10 h-10"
@@ -87,6 +66,12 @@ export default function Contact() {
           </a>
           <p class="text-xs text-gray-500 mt-0 pt-0">
             © {new Date().getFullYear()} — raposinha.dev
+          </p>
+          <br />
+          <p class="text-xs text-[#EA00FF]   py-2">
+            Just in case you're wondering what is ‘raposinha’: <br /> My surname
+            means ‘piccola volpe’ in Italian, or tiny fox, that in Portughese is
+            raposinha :D
           </p>
         </div>
       </div>
