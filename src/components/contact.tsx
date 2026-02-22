@@ -35,7 +35,7 @@ export default function Contact() {
 
           {/* Email */}
           <a
-            href="mailto:your@email.com"
+            href="mailto:elena@raposinha.dev"
             aria-label="Email"
             class="text-gray-400 hover:text-[#EA00FF] transition-colors duration-300"
           >
