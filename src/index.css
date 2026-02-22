@@ -101,7 +101,6 @@ div:after {
 }
 
 body {
-  font-size: var(--f);
   background-color: var(--bg);
   display: flex;
   min-height: 100vh;
@@ -110,6 +109,7 @@ body {
 }
 
 .header {
+   font-size: var(--f);
   flex: 1;
   line-height: 0.75;
   margin: auto;

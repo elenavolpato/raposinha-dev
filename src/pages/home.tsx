@@ -1,22 +1,22 @@
-import { createSignal } from "solid-js";
-import Header from "./header";
-import Techs from "./techs";
-import Projects from "./projects";
-import About from "./about";
-import Contact from "./contact";
+import Header from '../components/header'
+import Techs from '../components/techs'
+import Projects from '../components/projects'
+import About from '../components/about'
+import Contact from '../components/contact'
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main class="bg-gradient-to-br from-[#181717] via-[#252525] to-[#2d2d2d]">
         <Header />
-        <section class="max-w-800 flex flex-col items-center ">
+        <section class="flex flex-col items-center ">
           <Techs />
-          <Projects />
           <About />
+          <Projects />
+
           <Contact />
         </section>
       </main>
     </>
-  );
+  )
 }
