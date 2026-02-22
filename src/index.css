@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* @layer base {
   *,
@@ -10,6 +10,7 @@
   }
 }
  */
+
 body {
   background-color: #222; /* aa */
 }
@@ -19,11 +20,9 @@ body {
   animation: glitch 0.8s linear infinite;
 }
 .elena-img:hover,
-.elena-img:focus{
-  animation:  glitchTop 2s linear ;
-  animation: glitchBottom 1s linear ;
-  
-
+.elena-img:focus {
+  animation: glitchTop 2s linear;
+  animation: glitchBottom 1s linear;
 }
 
 @keyframes glitch {
@@ -105,11 +104,23 @@ body {
   display: flex;
   min-height: 100vh;
   margin: 0;
-  font-family: Kode Mono, monospace;
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    Kode Mono,
+    monospace;
 }
 
 .header {
-   font-size: var(--f);
+  font-size: var(--f);
   flex: 1;
   line-height: 0.75;
   margin: auto;
@@ -136,7 +147,8 @@ body {
   text-align: center;
   transform: translateX(calc(var(--left) * 100%));
   filter: drop-shadow(0 0 transparent);
-  text-shadow: calc(var(--left) * -3em) 0 0.02em #920281,
+  text-shadow:
+    calc(var(--left) * -3em) 0 0.02em #920281,
     calc(var(--left) * -6em) 0 0.02em #1af0dc;
   background-color: var(--bg);
   clip-path: polygon(
