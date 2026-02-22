@@ -1,5 +1,10 @@
 import { createSignal, For, Show, onMount, onCleanup } from 'solid-js'
 
+import circuito from '/images/circuto-memoria-paulistana.webm'
+import meditate from '/images/meditate.webm'
+import seasonalFood from '/images/seasonal-food.png'
+import weatherApp from '/images/weather-app.png'
+
 type Project = {
   id: number
   title: string
@@ -22,7 +27,7 @@ const projectsData: ProjectsData = [
     subtitle: 'Check the seasonality of produce in Italy',
     description:
       "This project was developed to address a genuine challenge: determining the availability of fruits and vegetables in a new country or region. Despite searching for solutions and information, we couldn't find anything intuitive or capable of meeting my needs. Used  data from slowfood.it",
-    media: 'public/images/seasonal-food.png',
+    media: seasonalFood,
     tags: [
       'React',
       'Styled Components',
@@ -42,7 +47,7 @@ const projectsData: ProjectsData = [
     subtitle: 'Used API open weather to build a simple weather forecast',
     description:
       'As a part of my masters in EPICODE we had to develop a weather app using open weather. It turns out that the results came out pretty well and I decided to publish it',
-    media: 'public/images/weather-app.png',
+    media: weatherApp,
     tags: ['React', 'Bootstrap', 'API', 'responsiveness', 'personal project'],
     github: 'https://meteo-app.raposinha.dev/',
     external: '#',
@@ -74,7 +79,7 @@ const projectsData: ProjectsData = [
     subtitle: 'Short project for Sao Paulo Cultural project',
     description:
       'This was a 2 months project for the Sao Paulo prefecture that I worked as front end developer and Quality assurance analyst.',
-    media: 'public/images/circuto-memoria-paulistana.webm',
+    media: circuito,
     tags: ['Vue', 'Tailwind', 'FrontEnd', 'QA', 'Team work'],
     github: '#',
     external: 'public/images/circuto-memoria-paulistana.webm',
@@ -87,7 +92,7 @@ const projectsData: ProjectsData = [
     subtitle: 'During Lockdown this was my first developer project',
     description:
       'This meditation timer has customizable features beyond the time duration of your meditation session: there are three options for the Tibetan Bell sound and there is also the option to have reminders sounds along your meditation. In the end, by default, three bells are played.',
-    media: 'public/images/meditate.webm',
+    media: meditate,
     tags: ['Vue3', 'Tailwind', 'Vite', 'Personal Project'],
     github: 'https://github.com/elenavolpato/meditate',
     external: 'http://meditate.raposinha.dev/',
