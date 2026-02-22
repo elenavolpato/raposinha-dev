@@ -1,12 +1,22 @@
-import { createSignal } from "solid-js";
-import Header from "./header";
+import Header from '../components/header'
+import Techs from '../components/techs'
+import Projects from '../components/projects'
+import About from '../components/about'
+import Contact from '../components/contact'
 
 export default function Home() {
-  const [count, setCount] = createSignal(0);
-
   return (
     <>
-      <Header />
+      <main class="bg-zinc-900">
+        <Header />
+        <section class="flex flex-col items-center ">
+          <Techs />
+          <About />
+          <Projects />
+
+          <Contact />
+        </section>
+      </main>
     </>
-  );
+  )
 }
