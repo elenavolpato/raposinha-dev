@@ -104,7 +104,7 @@ body {
   display: flex;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Syne', sans-serif;
+  font-family: 'SFMono-Regular', monospace;
   font-weight: 500;
 }
 
@@ -326,4 +326,11 @@ div:after {
   62% {
     transform: translate(-22px, 5px) skew(21deg);
   }
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--muted);
 }

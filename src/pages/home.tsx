@@ -7,7 +7,7 @@ import Contact from '../components/contact'
 export default function Home() {
   return (
     <>
-      <main class="bg-gradient-to-br from-[#181717] via-[#252525] to-[#2d2d2d]">
+      <main class="bg-zinc-900">
         <Header />
         <section class="flex flex-col items-center ">
           <Techs />

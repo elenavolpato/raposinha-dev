@@ -9,7 +9,7 @@ export default function About() {
   })
 
   return (
-    <section>
+    <section class=" py-12">
       <div class="flex flex-col md:flex-row max-w-[1200px] items-start my-8 gap-5">
         <div class="relative">
           <div
