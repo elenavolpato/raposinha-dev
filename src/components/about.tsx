@@ -1,6 +1,6 @@
 import { createEffect } from 'solid-js'
 import AboutData from '../assets/about.data'
-import elena from '../assets/public/images/elena_2025.png'
+import elena from '/images/elena_2025.png'
 
 export default function About() {
   const name = AboutData()
