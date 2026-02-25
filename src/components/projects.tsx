@@ -177,7 +177,7 @@ export default function FeaturedProjects() {
                         <img
                           src={project.media}
                           alt={project.title}
-                          class="w-full h-auto shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-300"
+                          class="w-full h-auto shadow-2xl md:grayscale group-hover:grayscale-0 transition-all duration-300"
                         />
                       </Show>
                       <Show when={project.video}>
