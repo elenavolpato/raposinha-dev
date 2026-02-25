@@ -334,3 +334,7 @@ div:after {
   height: 1px;
   background: var(--muted);
 }
+
+.elena-img {
+  margin-inline: auto;
+}

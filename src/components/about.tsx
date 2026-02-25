@@ -12,7 +12,7 @@ export default function About() {
   return (
     <section class=" py-12">
       <div class="flex flex-col md:flex-row max-w-[1200px] items-start my-8 gap-5">
-        <div class="relative">
+        <div class="relative mb-5 elena-img">
           <div
             class="absolute -inset-2 border-2 border-[#87F9E6] bg-[#1f1f1f]"
             style={{ transform: 'translate(18px, 18px)' }}

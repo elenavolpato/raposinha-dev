@@ -164,7 +164,7 @@ export default function FeaturedProjects() {
                   0{project.id} —
                 </div> */}
                 <div
-                  class={`flex flex-col ${project.mediaOnRight ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center  pb-16`}
+                  class={`flex flex-col ${project.mediaOnRight ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center  pb-0 md:pb-16`}
                 >
                   {/* Media — slides in from the outer edge */}
                   <AnimatedCard
