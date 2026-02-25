@@ -190,7 +190,7 @@ export default function FeaturedProjects() {
                             autoplay
                             title={project.title}
                             src={project.media}
-                            class="h-full w-full shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-300"
+                            class="h-full w-full shadow-2xl md:grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </Show>
