@@ -4,6 +4,7 @@ import circuito from '/images/circuto-memoria-paulistana.webm'
 import meditate from '/images/meditate.webm'
 import seasonalFood from '/images/seasonal-food.png'
 import weatherApp from '/images/weather-app.png'
+import choremate from '/images/choremate.png'
 
 type Project = {
   id: number
@@ -22,6 +23,29 @@ type ProjectsData = Project[]
 
 const projectsData: ProjectsData = [
   {
+    id: 0,
+    title: 'ChoreMate App',
+    subtitle:
+      'Organize your household chores and make your everyday life easier',
+    description:
+      'This app was developed as a final project for my Master in Full Stack development in Epicode Institute of Technology. This project is still in development and the released version is only version one in which you can create a your household, add people to add, add tasks, create personalized tasks, and assign them to other group members.',
+    media: choremate,
+    tags: [
+      'React',
+      'Redux',
+      'Vite',
+      'Bootstrap',
+      'SpringBoot',
+      'Postgres',
+      'Mailgun',
+      'REST API',
+    ],
+    github: 'https://github.com/elenavolpato/FE-houseHoldChores/',
+    external: 'https://choremate.raposinha.dev',
+    mediaOnRight: true,
+    video: false,
+  },
+  {
     id: 1,
     title: 'Seasonal food App',
     subtitle: 'Check the seasonality of produce in Italy',
@@ -32,14 +56,14 @@ const projectsData: ProjectsData = [
       'React',
       'Styled Components',
       'Food',
-      'tailwind',
+      'Tailwind',
       'App',
       'i18next',
       'personal project',
     ],
     github: 'https://github.com/elenavolpato/seasonalfood',
     external: 'https://seasonalfood.raposinha.dev',
-    mediaOnRight: true,
+    mediaOnRight: false,
   },
   {
     id: 2,
@@ -51,7 +75,7 @@ const projectsData: ProjectsData = [
     tags: ['React', 'Bootstrap', 'API', 'responsiveness', 'personal project'],
     github: 'https://github.com/elenavolpato/meteo-app',
     external: 'https://meteo-app.raposinha.dev/',
-    mediaOnRight: false,
+    mediaOnRight: true,
   },
   {
     id: 3,
@@ -71,7 +95,7 @@ const projectsData: ProjectsData = [
     ],
     github: '#',
     external: 'https://www.laletu.de/home',
-    mediaOnRight: true,
+    mediaOnRight: false,
   },
   {
     id: 5,
@@ -83,7 +107,7 @@ const projectsData: ProjectsData = [
     tags: ['Vue', 'Tailwind', 'FrontEnd', 'QA', 'Team work'],
     github: '#',
     external: 'public/images/circuto-memoria-paulistana.webm',
-    mediaOnRight: false,
+    mediaOnRight: true,
     video: true,
   },
   {
@@ -96,7 +120,7 @@ const projectsData: ProjectsData = [
     tags: ['Vue3', 'Tailwind', 'Vite', 'Personal Project'],
     github: 'https://github.com/elenavolpato/meditate',
     external: 'https://elenavolpato.github.io/meditate/#/',
-    mediaOnRight: true,
+    mediaOnRight: false,
     video: true,
   },
 ]
@@ -250,6 +274,7 @@ export default function FeaturedProjects() {
                             href={project.github}
                             class="text-gray-400 hover:text-gray-100 transition-colors"
                             aria-label="GitHub"
+                            target="_blank"
                           >
                             <svg
                               class="w-6 h-6"
@@ -264,6 +289,7 @@ export default function FeaturedProjects() {
                           href={project.external}
                           class="text-slate-400 hover:text-cyan-400 transition-colors"
                           aria-label="External Link"
+                          target="_blank"
                         >
                           <svg
                             class="w-6 h-6"

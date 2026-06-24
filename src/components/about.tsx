@@ -44,11 +44,13 @@ export default function About() {
           </p>
 
           <p class="text-base text-gray-50 py-2">
-            I worked for two years (2023–2025) at a German startup as a
-            front-end developer, where we built software to help children learn
-            how to read. Between meetings and Slack notifications, I also
-            developed a couple of apps on my own. I’m now channeling that
-            experience into a
+            I worked for two years at a German startup as a front-end developer,
+            where we built software to help children learn how to read. Between
+            meetings and Slack notifications, I also developed a couple of apps
+            on my own. In 2026 I finishes a master in Full Stack Development di{' '}
+            <a href="https://epicode.com/it/" target="_blank">
+              Epicode Institute of Technology
+            </a>
             <strong> master’s degree to become a full-stack developer.</strong>
           </p>
 
