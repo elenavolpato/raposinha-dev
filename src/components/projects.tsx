@@ -28,7 +28,7 @@ const projectsData: ProjectsData = [
     subtitle:
       'Organize your household chores and make your everyday life easier',
     description:
-      'This app was developed as a final project for my Master in Full Stack development in Epicode Institute of Technology. This project is still in development and the released version is only version one in which you can create a your household, add people to add, add tasks, create personalized tasks, and assign them to other group members.',
+      'This app was developed as a final project for my Master in Full Stack development in Epicode Institute of Technology. This is a ongoing project, in which many improvements are in development :D In this first you can already create a your household, add people to it, add preset tasks, create personalized tasks, and assign tasks to other group members.',
     media: choremate,
     tags: [
       'React',
