@@ -119,7 +119,7 @@ const projectsData: ProjectsData = [
     media: meditate,
     tags: ['Vue3', 'Tailwind', 'Vite', 'Personal Project'],
     github: 'https://github.com/elenavolpato/meditate',
-    external: 'https://elenavolpato.github.io/meditate/#/',
+    external: 'https://meditate.raposinha.dev/',
     mediaOnRight: false,
     video: true,
   },
