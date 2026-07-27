@@ -70,7 +70,7 @@ export default function Contact() {
           <br />
           <p class="text-xs text-[#EA00FF]   py-2">
             Just in case you're wondering what is ‘raposinha’: <br /> My surname
-            means ‘piccola volpe’ in Italian, or tiny fox, that in Portughese is
+            means ‘piccola volpe’ in Italian, or tiny fox, that in Portuguese is
             raposinha :D
           </p>
         </div>
