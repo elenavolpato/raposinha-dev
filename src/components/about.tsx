@@ -30,38 +30,47 @@ export default function About() {
           {/* <p class="text-base text-gray-50 text-xl">About Elena Volpato </p> */}
 
           <p class="text-base text-gray-50 pb-2">
-            Born and raised Brazilian, living in Piemonte, Italy (yes, I traded
-            caipirinhas and samba for wine and truffles, and honestly, no
+            Born and raised in Brazil, now living in Italy (yes, I traded
+            caipirinhas and samba for wine and mountains, and honestly, no
             regrets).
           </p>
 
           <p class="text-base text-gray-50 py-2">
-            As if moving to another country wasn’t enough, I also changed my
-            career in 2021 from event and presentations project manager to
-            front-end developer, which basically means that now I make buttons
-            that actually do stuff and then secretly judge the shade of blue
-            chosen by the client. :D
+            My path into tech wasn't exactly linear. Before writing code, I
+            spent{' '}
+            <strong>
+              {' '}
+              over nine years managing projects for international brands,
+            </strong>
+            working between clients, creative teams and technical teams to turn
+            messy requirements into things that could actually be delivered.
           </p>
 
           <p class="text-base text-gray-50 py-2">
-            I worked for two years at a German startup as a front-end developer,
-            where we built software to help children learn how to read. Between
-            meetings and Slack notifications, I also developed a couple of apps
-            on my own.{' '}
+            In 2021, I decided I didn't just want to manage the process — I
+            wanted to build things too. Since then, I've worked on a São Paulo
+            Townhall project ad Front-end developer and QA Analyst, and as a
+            front-end developer at a German startup, building production
+            software with Angular, Vue and TypeScript, while expanding into
+            full-stack development with Java, Spring Boot and PostgreSQL.
             <strong>
-              In 2026 I finished a master in Full Stack Development in
+              In 2026 I completed a Full Stack Development program at
               <a href="https://epicode.com/it/" target="_blank">
-                Epicode Institute of Technology
+                Epicode Institute of Technology.
               </a>
-              master’s degree to become a full-stack developer.
             </strong>
           </p>
 
           <p class="text-base text-gray-50 py-2">
-            What really drives me? <strong>Creative problem solving.</strong> I
-            really enjoy untangling messy code and designing designing things
-            that just work, and sometimes I even live spending hours debugging
-            and making my hair turn gray.
+            These days, I'm particularly interested in the space where product
+            <strong>
+              {' '}
+              thinking, business problems and software development meet.
+            </strong>{' '}
+            Give me an ambiguous problem, a process that makes no sense, or
+            something that involves the sentence “we do this manually every
+            week”, and I'll probably want to take it apart, understand it and
+            figure out a better way.
           </p>
         </div>
       </div>

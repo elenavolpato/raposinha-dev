@@ -57,7 +57,7 @@ export default function Techs() {
           Elena Volpato
         </h1>
         <h1 class="md:text-4xl  text-2xl text-gray-100 text-center pb-5 mb-5">
-          Full Stack Developer
+          Product-Minded Full Stack Developer{' '}
         </h1>
 
         <div class="max-w-full w-screen ">

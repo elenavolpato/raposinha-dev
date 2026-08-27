@@ -3,6 +3,7 @@ import meditate from '/images/meditate.webm'
 import seasonalFood from '/images/seasonal-food.png'
 import weatherApp from '/images/weather-app.png'
 import choremate from '/images/choremate.png'
+import aiAgent from '/images/aiAgent.mp4'
 
 type Project = {
   id: number
@@ -22,6 +23,30 @@ type ProjectsData = Project[]
 export const projectsData: ProjectsData = [
   {
     id: 0,
+    title: 'AI Agent',
+    subtitle: 'An AI-powered conversational agent',
+    description:
+      'A conversational portfolio built around an AI assistant instead of traditional navigation. The assistant is grounded in my real experience, skills and projects, allowing visitors to ask questions naturally and receive personalized answers with rich inline project, skills and contact cards. Built with Vue 3, Vite and Pinia, with a Vercel serverless function securely proxying requests to the Gemini API so the API key is never exposed to the browser.',
+    media: aiAgent,
+    tags: [
+      'Vue 3',
+      'Pinia',
+      'Gemini API',
+      'AI',
+      'LLM',
+      'Vite',
+      'Serverless',
+      'Vercel',
+      'REST API',
+      'personal project',
+    ],
+    github: 'https://github.com/elenavolpato/ai-portfolio',
+    external: 'https://agent.raposinha.dev',
+    mediaOnRight: false,
+    video: true,
+  },
+  {
+    id: 1,
     title: 'ChoreMate App',
     subtitle:
       'Organize your household chores and make your everyday life easier',
@@ -44,7 +69,7 @@ export const projectsData: ProjectsData = [
     video: false,
   },
   {
-    id: 1,
+    id: 2,
     title: 'Seasonal food App',
     subtitle: 'Check the seasonality of produce in Italy',
     description:
@@ -64,7 +89,7 @@ export const projectsData: ProjectsData = [
     mediaOnRight: false,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Weather app',
     subtitle: 'Used API open weather to build a simple weather forecast',
     description:
@@ -76,7 +101,7 @@ export const projectsData: ProjectsData = [
     mediaOnRight: true,
   },
   {
-    id: 3,
+    id: 4,
     title: 'LaLeTu - Digi Sapiens',
     subtitle: 'Nearly 2 years experience in a German Startup',
     description:
@@ -100,7 +125,7 @@ export const projectsData: ProjectsData = [
     title: 'Circuito da memória Paulistana',
     subtitle: 'Short project for Sao Paulo Cultural project',
     description:
-      'This was a 2 months project for the Sao Paulo prefecture that I worked as front end developer and Quality assurance analyst.',
+      'This was a project for the Sao Paulo townhall that I worked as front end developer and Quality assurance analyst. The challenge here was to display all the material in a intuitive and interesting way while making the code as clean as possible to be maintainable.',
     media: circuito,
     tags: ['Vue', 'Tailwind', 'FrontEnd', 'QA', 'Team work'],
     github: '#',
